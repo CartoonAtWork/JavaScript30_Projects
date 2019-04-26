@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <title>Drum Kit - JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="keys">
+        <div data-key="65" class="key" class="playing"> <!--Table de codes caractères: ASCII-->
+            <kbd>A</kbd> <!--Extension de l'élément afin d'inclure tout type de saisie 
+            de l'utilisateur (vocale, tactile, clavier)-->
+            <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key" class="playing">
+            <kbd>S</kbd> 
+            <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key" class="playing">
+            <kbd>D</kbd> 
+            <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key" class="playing">
+            <kbd>F</kbd> 
+            <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key" class="playing">
+            <kbd>G</kbd> 
+            <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key" class="playing">
+            <kbd>H</kbd> 
+            <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key" class="playing">
+            <kbd>J</kbd> 
+            <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key" class="playing">
+            <kbd>K</kbd> 
+            <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key" class="playing">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+        </div>
+    </div>
+    <!--tip: https://css-tricks.com/snippets/javascript/javascript-keycodes/-->
+    
+    <audio data-key="65" scr="sounds/clap.wav"></audio>
+    <audio data-key="83" scr="sounds/hihat.wav"></audio>
+    <audio data-key="68" scr="sounds/kick.wav"></audio>
+    <audio data-key="70" scr="sounds/openhat.wav"></audio>
+    <audio data-key="71" scr="sounds/boom.wav"></audio>
+    <audio data-key="72" scr="sounds/ride.wav"></audio>
+    <audio data-key="74" scr="sounds/snare.wav"></audio>
+    <audio data-key="75" scr="sounds/sound.wav"></audio>
+    <audio data-key="76" scr="sounds/tink.wav"></audio>
+
+    <script src="script.js"> 
+
+
+    /*window.addEventListener('keydown', function(e){
+        console.log (e.keyCode);
+});*/
+    </script>
+
+</body>
+</html>
